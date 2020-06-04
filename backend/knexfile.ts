@@ -1,7 +1,7 @@
 import path from 'path';
 
 //to run the migrations:
-//  npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+//  npx knex --knexfile knexfile.ts migrate:latest
 //  the (knexfile.ts) is the file of knexfile.ts, in this case is the root path
 
 //we can use npm script for run the command too
@@ -13,6 +13,9 @@ module.exports = {
     },
     migrations: {
         directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
+    },
+    seeds: {
+        directory: path.resolve(__dirname, 'src', 'database', 'seeds'),
     },
     useNullAsDefault: true,
 };
