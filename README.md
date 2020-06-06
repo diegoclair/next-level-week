@@ -28,7 +28,7 @@ To start the application, you need follow the steps below:
 <br></br>
 * Mobile App:
    - Go to mobile folder and run the command <b>```expo start```</b> on terminal and your brownser will open a page with a qrcode.
-   - Above the qrcode you will see a ip like that: <b>'exp://192.168.0.41:19000'</b>, copy only the ip: <b>192.168.0.43</b>.
+   - Above the qrcode you will see a ip like that: <b>'exp://192.168.0.41:19000'</b>, copy only the ip: <b>192.168.0.41</b>.
    - Go to backend\src\routes\controllers\ItemsController.ts file and past the Ip that you copied and save the file.
    - Open the camera on your smartphone and scan the qrcode on the browser in yout pc.
    - Wait and your app be ready and then you can use it.
