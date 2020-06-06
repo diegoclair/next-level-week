@@ -24,7 +24,7 @@ To start the application, you need follow the steps below:
       * <b>```npm run dev```</b>
    - Go to frontend folder and run the command <b>```npm start```</b>
    - Go to your brownser and type <b>```localhost:3000```</b>
-   - Now you can use the web application.  
+   - Now you can use the web application.
 <br></br>
 * Mobile App:
    - Go to mobile folder and run the command <b>```expo start```</b> on terminal and your brownser will open a page with a qrcode.
