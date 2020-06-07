@@ -65,8 +65,8 @@ const CreatePoint = () => {
   useEffect(() => {
     axios.get<IBGEUFResponse[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
     .then(response => {
-      const ufInitials = response.data.map(uf => uf.sigla)
-      setUfs(ufInitials)
+      const ufs = response.data.map(uf => uf.sigla)
+      setUfs(ufs)
     });
   }, []);
 
@@ -76,8 +76,8 @@ const CreatePoint = () => {
     }
     axios.get<IBGECityResponse[]>(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${selectedUf}/municipios`)
     .then(response => {
-      const city = response.data.map(city => city.nome)
-      setCities(city)
+      const cities = response.data.map(city => city.nome)
+      setCities(cities)
     });
     
   }, [selectedUf]); //here we say that this useEffect will be called when the variable selectedUf change

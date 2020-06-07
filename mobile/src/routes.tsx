@@ -11,7 +11,7 @@ const AppStack = createStackNavigator();
 const Routes = () => {
   return (
     <NavigationContainer>
-      <AppStack.Navigator 
+      <AppStack.Navigator
         headerMode='none'
         //the first {} say that we'll use js code and the second {} say that this is a object
         screenOptions={{
