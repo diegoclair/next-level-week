@@ -12,6 +12,7 @@
   "author": "Diego Clair Rodrigues",
   "license": "ISC",
   "dependencies": {
+    "celebrate": "^12.1.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "ip": "^1.1.5",
