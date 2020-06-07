@@ -2,11 +2,12 @@ import React, {useEffect, useState, ChangeEvent, FormEvent} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { Map, TileLayer, Marker } from 'react-leaflet';
 import {LeafletMouseEvent} from 'leaflet'
+import { FiArrowLeft } from 'react-icons/fi';
 import axios from 'axios'
 
 import api from '../../services/api'
 
-import { FiArrowLeft } from 'react-icons/fi';
+import Dropzone from '../../components/Dropzone'
 
 import './styles.css';
 import logo from '../../assets/logo.svg';
@@ -45,6 +46,7 @@ const CreatePoint = () => {
   const [selectedCity, setSelectedCity] = useState('0');
   const [selectedItems, setSelectedItems] = useState<number[]>([])
   const [selectedPosition, setSelectedPosition] = useState<[number, number]>([0,0]);
+  const [selectedFile, setSelectedFile] = useState<File>();
 
   const history = useHistory();
   
@@ -118,24 +120,28 @@ const CreatePoint = () => {
 
   async function handleSubmit(event: FormEvent){
     event.preventDefault(); //to do not change the page when we click 'Cadastrar ponto de coleta' with defaul aciton. We will control this
-    
+
     const {name, email, whatsapp} = formData;
     const uf = selectedUf;
     const city = selectedCity;
     const [latitude, longitude] = selectedPosition;
     const items = selectedItems;
 
-    const data = {
-      name,
-      email,
-      whatsapp,
-      uf,
-      city,
-      latitude,
-      longitude,
-      items
-    };
+    const data = new FormData();
 
+    data.append('name', name);
+    data.append('email', email);
+    data.append('whatsapp', whatsapp);
+    data.append('uf', uf);
+    data.append('city', city);
+    data.append('latitude', String(latitude));
+    data.append('longitude', String(longitude));
+    data.append('items', items.join(','));
+
+    if (selectedFile){
+      data.append('image', selectedFile);
+    }
+   
     await api.post('/points', data);
     alert('Ponto de coleta criado com sucesso.')
 
@@ -154,6 +160,9 @@ const CreatePoint = () => {
 
       <form onSubmit={handleSubmit}>
         <h1>Cadastro do<br />ponto de coleta</h1>
+
+        <Dropzone onFileUploaded={setSelectedFile} />
+
         <fieldset>
           <legend>
             <h2>Dados</h2>
