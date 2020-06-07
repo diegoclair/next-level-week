@@ -20,7 +20,7 @@
   
 </p>
 
-## 💻 Project
+## 📝 Project
 Ecoleta is a project developed with a purpose to connect people with waste collection institutions/companies like electronics, cardboard papers, batteries, organics, and etc.  
 
 We developed this project in the same week of <b>World Environment Week</b> and because of that, the project has this name and this purpose.  
@@ -30,7 +30,7 @@ We developed this project in the same week of <b>World Environment Week</b> and 
     <img alt="Example" title="Example" src=".github/capa.svg" width="500px" />
 </h1>
 
-## Requirements
+## ❗ Requirements
 To run this application you have to install (if you don't have already installed) the follow programs:
 * <b>In your computer</b>:
    * [Node js and npm](https://nodejs.org/en/download/)
@@ -38,9 +38,9 @@ To run this application you have to install (if you don't have already installed
 * <b>In your smartphone</b>:
    * App called expo available in [GooglePlay](https://play.google.com/store/apps/details?id=host.exp.exponent) and [AppleStore](https://apps.apple.com/br/app/expo-client/id982107779)
 <br></br>
-## Start application
+## ▶️ Start application
 To start the application, you need follow the steps below:  
-### Web Application:  
+### 💻 Web Application:  
    * Go to backend folder and run the commands:
       * <b>```npm run knex:migrate```</b>
       * <b>```npm run knex:seed```</b>
@@ -50,7 +50,7 @@ To start the application, you need follow the steps below:
    - Now you can use the web application.
    - <b>To see available points, you need to use mobile app, in frontend we just create the points.</b>
 <br></br>
-### Mobile App:
+### 📱 Mobile App:
    - Go to mobile folder and run the command <b>```expo start```</b> on terminal and your brownser will open a page with a qrcode.
    - Open the camera on your smartphone and scan the qrcode on the browser in yout pc.
    - Wait and your app be ready and then you can use it.
