@@ -3,7 +3,8 @@
 </h1>
 
 <h4 align="center"> 
-	NextLevelWeek 1.0 🚀
+	NextLevelWeek 1.0 by
+   <a href="https://rocketseat.com.br/">Rocketseat</a> 🚀
 </h4>
 
 <p align="center">
