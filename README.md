@@ -43,16 +43,19 @@ To run this application you have to install (if you don't have already installed
 To start the application, you need follow the steps below:  
 ### 💻 Web Application:  
    * Go to backend folder and run the commands:
-      * <b>```npm run knex:migrate```</b>
-      * <b>```npm run knex:seed```</b>
-      * <b>```npm run dev```</b>
-   - Go to frontend folder and run the command <b>```npm start```</b>
+      - <b>```npm install```</b>
+      - <b>```npm run knex:migrate```</b>
+      - <b>```npm run knex:seed```</b>
+      - <b>```npm run dev```</b>
+   * Go to frontend folder and run the commands:
+      - <b>```npm install```</b>
    - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
    - Now you can use the web application.
    - <b>To see available points, you need to use mobile app, in frontend we just create the points.</b>
 <br></br>
 ### 📱 Mobile App:
-   - Go to mobile folder and run the command <b>```expo start```</b> on terminal and your brownser will open a page with a qrcode.
+   - Go to mobile folder and run the command <b>```npm install```</b>.
+   - After that, run the command <b>```expo start```</b> on terminal and your brownser will open a page with a qrcode.
    - Open the camera on your smartphone and scan the qrcode on the browser in yout pc.
    - Wait and your app be ready and then you can use it.
    - <b>To see points at map, you first need to create a point in frontend app, after that, you can find a point at mobile app.</b>
