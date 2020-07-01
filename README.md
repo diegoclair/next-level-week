@@ -49,6 +49,7 @@ To start the application, you need follow the steps below:
       - <b>```npm run dev```</b>
    * Go to frontend folder and run the commands:
       - <b>```npm install```</b>
+      - <b>```npm start```</b>
    - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
    - Now you can use the web application.
    - <b>To see available points, you need to use mobile app, in frontend we just create the points.</b>
